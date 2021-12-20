@@ -1,10 +1,13 @@
 package com.play.playground.dao;
 
+import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import lombok.extern.slf4j.Slf4j;
 import com.play.playground.entity.User;
 import com.play.playground.mapper.UserMapper;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.springframework.stereotype.Repository;
+
+import java.util.List;
 
 /**
  * (USER)数据DAO
@@ -17,4 +20,7 @@ import org.springframework.stereotype.Repository;
 @Repository
 public class UserDao extends ServiceImpl<UserMapper, User> {
 
+//    public List<User> queryUserByPhone(QueryWrapper queryWrapper){
+//        this.getBaseMapper();
+//    }
 }

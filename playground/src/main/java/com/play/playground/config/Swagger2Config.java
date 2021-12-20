@@ -36,7 +36,7 @@ public class Swagger2Config {
         Docket docket = new Docket(DocumentationType.SWAGGER_2)
                 .apiInfo(apiInfo) // 指定生成的文档中的封面信息；文档标题、版本、作者
                 .select()
-                .apis(RequestHandlerSelectors.basePackage("com.play.playground.controller"))
+                .apis(RequestHandlerSelectors.basePackage("com.play.playground"))
                 .paths(PathSelectors.any())
                 .build();
 

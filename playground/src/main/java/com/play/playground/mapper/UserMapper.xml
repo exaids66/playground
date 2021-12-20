@@ -9,4 +9,7 @@
          ID,USERNAME,PASSWORD,NICKNAME,STATUS,PHONE
     </sql>
 
+<!--    <select id="getUserByPhone" resultMap="">-->
+<!--        SELECT * FROM USER WHERE ${ew.customSqlSegment}-->
+<!--    </select>-->
 </mapper>

@@ -1,6 +1,8 @@
 package com.play.playground.entity;
 
 import java.io.Serializable;
+
+import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
 import com.baomidou.mybatisplus.extension.activerecord.Model;
@@ -26,6 +28,7 @@ public class User extends Model<User> implements Serializable {
      * ID
      */
     @TableId
+    @TableField()
 	private Integer  id;
     /**
      * 用户名
