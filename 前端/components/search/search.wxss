@@ -1,0 +1,15 @@
+.getInput{
+    display: flex;
+    width: 60%;
+    height: 55rpx;
+    margin-left: 20%;
+    border:2rpx solid gray;
+    border-radius: 30rpx;
+}
+image{
+    width: 40rpx;
+    height: 40rpx;
+    align-items: center;
+    margin-left: 10rpx;
+    margin-top: 9rpx;
+}

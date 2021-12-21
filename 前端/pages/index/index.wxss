@@ -1,0 +1,19 @@
+.swapp{
+    width: 100%;
+    height: 300rpx;
+    background-color:gray;
+}
+.loc{
+    width: 35rpx;
+    height: 35rpx;
+}
+.choice{
+    height: 60px;
+    display: flex;
+    flex-direction:row;
+    margin-top: 10px;
+}
+.choice-img{
+    width:100%;
+    height:calc(100vw*300/750);
+}

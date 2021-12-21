@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "ordermsg":"/components/ordermsg/ordermsg"
+  }
+}

@@ -1,0 +1,21 @@
+<view>
+    <image src="/icon/pos.png" class="loc"></image>
+    <text>杭州电子科技大学</text>
+</view>
+<swiper style="height: 300rpx;" autoplay="true" circular interval="1000" indicator-dots="true">
+        <swiper-item><image src="/images/scoller.jpg" class="swapp"></image></swiper-item>
+        <swiper-item><image src="/images/scoller.jpg" class="swapp"></image></swiper-item>
+        <swiper-item><image src="/images/scoller.jpg" class="swapp"></image></swiper-item>
+</swiper>
+
+<view class="choice">
+    <!-- <button style="background-color: pink;width: 50px;height: 50px;border-radius:50%;margin-top: 10px;""><image src="{{item.url}}"></image></button> -->
+    <button style="background-color: pink;width: 50px;height: 50px;border-radius:50%;margin-top: 10px;"><image src="/icon/yumao.png" style="height: 30px;width:30px;margin-top:2px;margin-left:-14px"></image></button>
+    <button style="background-color: #76da91;width: 50px;height: 50px;border-radius:50%;margin-top: 10px;"><image src="/icon/lanqiu.png" style="height: 30px;width:30px;margin-top:2px;margin-left:-14px"></image></button>
+    <button style="background-color: #7cd6cf;width: 50px;height: 50px;border-radius:50%;margin-top: 10px;"><image src="/icon/pingpong.png" style="height: 30px;width:30px;margin-top:2px;margin-left:-14px"></image></button>
+    <button style="background-color: #efa666;width: 50px;height: 50px;border-radius:50%;margin-top: 10px;"><image src="/icon/paiqiu.png" style="height: 30px;width:30px;margin-top:2px;margin-left:-14px"></image></button>
+</view>
+
+<ordermsg></ordermsg>
+
+
