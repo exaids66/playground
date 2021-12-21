@@ -1,0 +1,9 @@
+{
+  "usingComponents": { 
+    "search": "/components/search/search",
+    "ordermsg": "/components/ordermsg/ordermsg"
+    
+  },
+  "navigationBarTitleText": "我的记录"
+  
+}

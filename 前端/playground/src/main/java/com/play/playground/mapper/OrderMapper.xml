@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.play.playground.mapper.OrderMapper">
+    <sql id="tableName">
+        ORDER
+    </sql>
+
+    <sql id="baseColumn">
+        ID,ORDER_TIME,START_TIME,END_TIME,STATUS,USER_ID,FIELD_ID
+    </sql>
+
+</mapper>
