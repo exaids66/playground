@@ -1,7 +1,12 @@
 package com.play.playground.mapper;
 
+import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
+import com.baomidou.mybatisplus.core.metadata.IPage;
+import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.play.playground.entity.Field;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
+import com.play.playground.vo.FieldSearchResultVO;
+import com.play.playground.vo.FieldSearchVO;
 import org.apache.ibatis.annotations.Mapper;
 
 /**
@@ -13,5 +18,7 @@ import org.apache.ibatis.annotations.Mapper;
 */
 @Mapper
 public interface FieldMapper extends BaseMapper<Field> {
+
+    IPage<FieldSearchResultVO> searchField(QueryWrapper queryWrapper, Page page);
 
 }

@@ -9,7 +9,7 @@ import lombok.ToString;
 @Data
 @ToString
 public class OrderResultVO {
-
+    
     private String username;
 
     private Integer userId;

@@ -13,10 +13,9 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-@Controller
-@RestController
-@RequestMapping("/user")
-@Api("用户操作接口")
+@RequestMapping("/order")
+@RestController()
+@Api(tags = "用户管理模块", description = "用户管理模块")
 public class UserController {
 
     @Autowired
