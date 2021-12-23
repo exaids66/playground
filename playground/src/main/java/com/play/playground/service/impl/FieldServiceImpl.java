@@ -10,17 +10,19 @@ import com.play.playground.vo.FieldSearchVO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 @Service
 public class FieldServiceImpl implements FieldService {
 
     @Autowired
     FieldDao fieldDao;
 
-    public Result searchField(FieldSearchVO fieldSearchVO, Page page){
+    public IPage<FieldSearchResultVO> searchField(FieldSearchVO fieldSearchVO, Page page){
         IPage<FieldSearchResultVO> iPage =
                 fieldDao.getBaseMapper()
                         .searchField(fieldSearchVO.generateWrapper(), page);
-        return Result.ok(iPage);
+        return iPage;
     }
 
 }

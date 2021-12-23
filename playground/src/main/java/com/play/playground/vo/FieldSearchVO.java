@@ -8,18 +8,20 @@ import com.play.playground.util.StaticUtil;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
+import io.swagger.annotations.ApiParam;
 import lombok.Data;
 
 @Data
 public class FieldSearchVO {
 
 //    @ApiModelProperty(name = "球场状态", notes = "前端传入,用于筛选可用球场(可用|不可用)")
+    @ApiParam(value = "球场状态,前端传入,用于筛选可用球场(可用|不可用)")
     private String status;
 
-//    @ApiModelProperty(name = "小球场类型", notes = "前端传入,用于按球场类型分类(羽毛球场|足球场|篮球场|排球场|乒乓球场)")
+    @ApiParam(value = "小球场类型,前端传入,用于按球场类型分类(羽毛球场|足球场|篮球场|排球场|乒乓球场)")
     private String type;
 
-//    @ApiModelProperty(name = "大场地ID", notes = "前端传入,用于按场地类型分类")
+    @ApiParam(value = "大场地ID 前端传入,用于按场地类型分类")
     private Long groundID;
 
 

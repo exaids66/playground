@@ -9,10 +9,14 @@ import com.play.playground.entity.User;
 import com.play.playground.service.OrderService;
 import com.play.playground.util.Result;
 import com.play.playground.vo.AttendVO;
+import com.play.playground.vo.OrderResultVO;
+import com.play.playground.vo.OrderSearchVO;
 import com.play.playground.vo.OrderVO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
+
+import java.util.List;
 
 @Service
 public class OrderServiceImpl implements OrderService {
@@ -68,5 +72,11 @@ public class OrderServiceImpl implements OrderService {
             return Result.ok("签到成功");
         else
             return Result.failed("签到失败");
+    }
+
+    @Override
+    public List<OrderResultVO> searchOrder(OrderSearchVO orderSearchVO) {
+        List<OrderResultVO> orderResultVOS = orderDao.searchOrder(orderSearchVO.generateWrapper());
+        return orderResultVOS;
     }
 }

@@ -21,7 +21,7 @@ public class UserController {
     @Autowired
     UserService userService;
 
-    @ApiOperation("登入")
+    @ApiOperation(value = "登入模块")
     @PostMapping("/login")
     public Result doLogin(LoginVO loginVO){
         return userService.Login(loginVO);

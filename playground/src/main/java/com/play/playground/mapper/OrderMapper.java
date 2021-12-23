@@ -1,8 +1,16 @@
 package com.play.playground.mapper;
 
+import com.baomidou.mybatisplus.core.conditions.Wrapper;
+import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
+import com.baomidou.mybatisplus.core.toolkit.Constants;
 import com.play.playground.entity.Order;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
+import com.play.playground.vo.OrderResultVO;
+import com.play.playground.vo.OrderSearchVO;
 import org.apache.ibatis.annotations.Mapper;
+import org.apache.ibatis.annotations.Param;
+
+import java.util.List;
 
 /**
  * (ORDER)数据Mapper
@@ -13,5 +21,7 @@ import org.apache.ibatis.annotations.Mapper;
 */
 @Mapper
 public interface OrderMapper extends BaseMapper<Order> {
+
+    List<OrderResultVO> searchOrder(@Param(Constants.WRAPPER) QueryWrapper queryWrapper);
 
 }

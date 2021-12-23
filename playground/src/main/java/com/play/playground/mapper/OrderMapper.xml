@@ -9,4 +9,31 @@
         ID,ORDER_TIME,START_TIME,END_TIME,STATUS,USER_ID,FIELD_ID
     </sql>
 
+    <select id="searchOrder" resultType="com.play.playground.vo.OrderResultVO">
+        SELECT
+            `ORDER`.ID as ORDER_ID,
+            `ORDER`.ORDER_TIME as ORDER_TIME,
+            `ORDER`.START_TIME as START_TIME,
+            `ORDER`.END_TIME as END_TIME,
+            `ORDER`.STATUS as ORDER_STATUS,
+            `USER`.ID as USER_ID,
+            `FIELD`.ID as FIELD_ID,
+            `FIELD`.FIELD_NAME as FIELD_ID,
+            `FIELD`.TYPE as FIELD_TYPE,
+            `FIELD`.ADDRESS as FIELD_ADDRESS,
+            `USER`.USERNAME as USERNAME,
+            `USER`.NICKNAME as NICKNAME,
+            `USER`.STATUS as USER_STATUS,
+            `USER`.PHONE as PHONE,
+            `PLAYGROUND`.ID as GROUND_ID,
+            `PLAYGROUND`.GROUND_NAME as GROUND_NAME
+        FROM USER
+            INNER JOIN `ORDER` ON USER.ID = `ORDER`.USER_ID
+            INNER JOIN FIELD ON FIELD.ID = `ORDER`.FIELD_ID
+            INNER JOIN PLAYGROUND ON PLAYGROUND.ID = FIELD.GROUND_ID
+        ${ew.customSqlSegment}
+
+
+    </select>
+
 </mapper>

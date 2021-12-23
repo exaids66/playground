@@ -30,8 +30,8 @@ public class OrderController {
 
     @ApiOperation("搜索用户预约信息")
     @GetMapping("/result")
-    public Result getOrderResult(OrderSearchVO orderSearchVO){
-        return null;
+    public List<OrderResultVO> getOrderResult(OrderSearchVO orderSearchVO){
+        return orderService.searchOrder(orderSearchVO);
     }
 
 

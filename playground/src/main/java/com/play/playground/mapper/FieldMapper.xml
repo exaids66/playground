@@ -28,7 +28,8 @@
             PLAYGROUND.CONTACT as CONTACT,
             PLAYGROUND.OPEN_TIME as OPEN_TIME,
             PLAYGROUND.CLOSE_TIME as CLOSE_TIME
-        FROM FIELD INNER JOIN PLAYGROUND ${queryWrapper.customSqlSegment}
+        FROM FIELD INNER JOIN PLAYGROUND ON FIELD.GROUND_ID = PLAYGROUND.ID
+        ${queryWrapper.customSqlSegment}
     </select>
     
 </mapper>
