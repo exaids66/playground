@@ -5,6 +5,8 @@ import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
 import com.baomidou.mybatisplus.extension.activerecord.Model;
 import java.util.Date;
+
+import io.swagger.annotations.ApiParam;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.experimental.Accessors;
@@ -27,22 +29,29 @@ public class Playground extends Model<Playground> implements Serializable {
      * ID
      */
     @TableId
-	private Integer id;
+    @ApiParam("大场地ID")
+	private Long id;
     /**
      * 场地名称
      */
+    @ApiParam("大场地名称")
     private String groundName;
     /**
      * 地址
      */
+    @ApiParam(value = "大场地地址")
     private String address;
+
     /**
      * 管理员名称
      */
+    @ApiParam(value = "管理员名称")
     private String adminName;
+
     /**
      * 联系方式
      */
+    @ApiParam(value = "管理员联系方式")
     private String contact;
     /**
      * 开馆时间

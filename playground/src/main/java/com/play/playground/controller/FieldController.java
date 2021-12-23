@@ -23,7 +23,7 @@ public class FieldController {
     FieldService fieldService;
 
     @GetMapping()
-    public Result searchField(@ApiParam(name="搜索项") FieldSearchVO fieldSearchVO, @ApiParam(name = "分页项") Page page){
+    public Result searchField(FieldSearchVO fieldSearchVO, Page page){
 
         return fieldService.searchField(fieldSearchVO, page);
     }

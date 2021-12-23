@@ -6,6 +6,7 @@ import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
 import com.baomidou.mybatisplus.extension.activerecord.Model;
+import io.swagger.annotations.ApiParam;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.experimental.Accessors;
@@ -29,26 +30,32 @@ public class User extends Model<User> implements Serializable {
      */
     @TableId
     @TableField()
-	private Integer  id;
+    @ApiParam("用户ID")
+	private Long  id;
     /**
      * 用户名
      */
+    @ApiParam("用户名")
     private String username;
     /**
      * 密码
      */
+    @ApiParam("密码")
     private String password;
     /**
      * 昵称
      */
+    @ApiParam("昵称")
     private String nickname;
     /**
      * 是否加入黑名单
      */
+    @ApiParam("黑名单状态(正常|失信)")
     private String status;
     /**
      * 手机号
      */
+    @ApiParam("手机号")
     private String phone;
 
 }

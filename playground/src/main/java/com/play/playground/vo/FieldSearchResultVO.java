@@ -13,7 +13,7 @@ import java.util.Date;
 @ApiModel("小场地搜索返回结果对象")
 public class FieldSearchResultVO {
 
-    private Integer fieldId;
+    private Long fieldId;
     /**
      * 场地类型(羽毛球|篮球|排球|乒乓球|田径场地)
      */
@@ -21,7 +21,7 @@ public class FieldSearchResultVO {
     /**
      * 运动场地ID
      */
-    private Integer groundId;
+    private Long groundId;
     /**
      * 地点
      */
@@ -36,7 +36,7 @@ public class FieldSearchResultVO {
     private String fieldName;
 
 
-    private Integer playgroundId;
+    private Long playgroundId;
     /**
      * 场地名称
      */
