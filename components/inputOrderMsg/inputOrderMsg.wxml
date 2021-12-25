@@ -1,0 +1,7 @@
+
+<view class="inputOrderMsg">
+    <text class="inputText">{{question}}</text>
+    {{tab}}
+        <time-pickers class="inputMsg inputText">
+        </time-pickers>
+</view>

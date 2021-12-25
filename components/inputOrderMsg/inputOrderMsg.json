@@ -1,0 +1,6 @@
+{
+    "component": true,
+    "usingComponents": {
+        "time-pickers":"/components/time-pickers/time-pickers"
+    }
+}

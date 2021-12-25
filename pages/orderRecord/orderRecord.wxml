@@ -1,0 +1,6 @@
+<search></search>
+<button bindtap="order">{{tstmsg}}</button>
+<view wx:for="{{msg}}">
+    <ordermsg></ordermsg>
+</view>
+

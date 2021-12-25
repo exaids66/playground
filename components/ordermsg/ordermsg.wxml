@@ -1,0 +1,23 @@
+<!--components/ordermsg/ordermsg.wxml-->
+<view bindtap="cancel">{{tst}}</view>
+<view wx:for="{{msg}}" wx:for-index="msgidx" class="orderMsg">
+    <view class="head" bindtap="courtDetail">{{item.name}}
+        <view class="head-right">
+            {{item.state}}
+        </view>
+        
+    </view>
+    <view class="body">       
+        <image class="left-left" src="/images/line.png"></image>                  
+        <view class="right"> 
+            <view class="top">{{item.id}}号{{item.type}}场</view>
+            <view class="middle"><text>{{item.startTime}}-{{item.endTime}}\n使用人数：{{item.count}}</text></view>
+            <view class="buttom">
+                <button type="default" plain="true" bindtap="change" id="{{msgidx}}">签到</button>
+                
+                <button type="default" plain="true">取消预约</button>
+                <button type="default" plain="true">报修</button>
+            </view>
+        </view>  
+    </view>
+</view>

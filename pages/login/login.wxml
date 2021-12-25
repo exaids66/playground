@@ -1,0 +1,16 @@
+<!--pages/auth/auth.wxml-->
+
+
+<view class="form">
+  <view class="row-group">
+    <text>手机</text>
+    <input id = "phone" placeholder="请填写手机号码" placeholder-class='txt' maxlength='11' bindinput="handleInput" />
+  </view>
+  <view class="row-group">
+    <text>密码</text>
+    <input id = "password" placeholder="请输入密码" placeholder-class='txt' bindinput="handleInput" />
+  </view>
+  <view>
+    <button class="submit" bindtap="onClickSubmit">登录 | 注册</button>
+  </view>
+</view>

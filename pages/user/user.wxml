@@ -1,0 +1,56 @@
+
+
+<view class="page">
+    <!--顶部图片区-->
+    
+    <view class="page-header">    
+        <image src="/images/me.png" class="info-box" bindtap="toLogin"></image>       
+    <view>
+        
+    </view>
+        <view class="header-info cc">
+             <image src="" mode="scaleToFill" class="header-icon" />
+             <text class="info-name vc">{{userInfo.nickName}}</text> 
+        </view>
+    </view> 
+
+    
+    <view class="page-item vc" bindtap="yuyueClick">
+        <view class="vc">
+            <image src="/images/icon_yuyue.png" mode="scaleToFill" class="p-icon" />
+        </view>
+        <view class="item-name">设备报修</view>
+        <view class="vc">
+            <image src="/images/icon_rightgo.png" mode="scaleToFill" class="p-icon" />
+        </view>
+    </view>
+   
+    <view class="page-item vc" bindtap="myInfoClick">
+        <view class="vc">
+            <image src="/images/me.png" mode="scaleToFill" class="p-icon" />
+        </view>
+        <view class="item-name">个人信息</view>
+        <view class="vc">
+            <image src="/images/icon_rightgo.png" mode="scaleToFill" class="p-icon" />
+        </view>
+    </view> 
+    
+    <view class="page-item vc" bindtap="discountClick">
+        <view class="vc">
+            <image src="/images/icon_discount.png" mode="scaleToFill" class="p-icon" />
+        </view>
+        <view class="item-name">我的预约</view>
+        <view class="vc">
+            <image src="/images/icon_rightgo.png" mode="scaleToFill" class="p-icon" />
+        </view>
+    </view> 
+     <view class="page-item vc" bindtap="eavClick">
+        <view class="vc">
+            <image src="/images/icon_order.png" mode="scaleToFill" class="p-icon" />
+        </view>
+        <view class="item-name">我收到的评价</view>
+        <view class="vc">
+            <image src="/images/icon_rightgo.png" mode="scaleToFill" class="p-icon" />
+        </view>
+    </view> 
+</view>

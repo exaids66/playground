@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "inputOrderMsg":"/components/inputOrderMsg/inputOrderMsg",
+    "time-picker":"/components/time-pickers/time-pickers"
+  },
+  "navigationBarTitleText": "场地预约"
+}

@@ -1,0 +1,24 @@
+.inputOrderMsg{
+    margin-left: 5%;
+    width: 90%;
+    height: 120rpx;
+    border-radius: 10rpx;
+    border:1rpx solid black;
+    display: flex;
+}
+.inputText{
+    line-height: 120rpx;
+    font-size: smaller;
+    padding-right: 0;
+    border: solid 1rpx red;
+    /* width: 20%; */
+}
+button{
+    border: black 1rpx solid;
+
+}
+.inputMsg{
+    /* width: 40%; */
+    height: 100%;  
+    margin-right: 0;
+}

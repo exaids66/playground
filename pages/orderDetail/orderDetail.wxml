@@ -1,0 +1,5 @@
+
+    <view wx:for="{{details}}">
+        <inputOrderMsg question = "{{item.question}}" answer="{{item.answer}}"></inputOrderMsg>
+    </view>
+<button type="default">确认预约</button>

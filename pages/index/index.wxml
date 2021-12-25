@@ -1,0 +1,28 @@
+<view>
+    <image src="/icon/pos.png" class="loc"></image>
+    <text>杭州电子科技大学</text>
+</view>
+<swiper style="height: 300rpx;" autoplay="true" circular interval="1000" indicator-dots="true">
+        <swiper-item><image src="/images/basketballCourt.jpg" class="swapp"></image></swiper-item>
+        <swiper-item><image src="/images/volleyballCourt.jpg" class="swapp"></image></swiper-item>
+        <swiper-item><image src="/images/badmintonCourt.jpg" class="swapp"></image></swiper-item>
+</swiper>
+
+<!-- 选择类型 -->
+<view class="choice" >   
+    <view wx:for="{{choice}}">
+    <button style="background-color: {{item.bgc}};" class="choice_button">
+    <image src="{{item.url}}" class="choice-img"></image>
+    </button> 
+    </view> 
+</view>
+
+<view class="tips">
+<image src="/images/me.png"></image>
+请注意防控</view>
+<!-- 预约记录 -->
+
+<ordermsg>
+</ordermsg>
+
+
