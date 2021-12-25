@@ -1,7 +1,9 @@
 package com.play.playground.service.impl;
 
+import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.play.playground.dao.UserDao;
 import com.play.playground.entity.User;
+import com.play.playground.mapper.UserMapper;
 import com.play.playground.service.UserService;
 import com.play.playground.util.Result;
 import com.play.playground.vo.LoginVO;
@@ -10,7 +12,7 @@ import org.springframework.stereotype.Service;
 
 
 @Service
-public class UserServiceImpl implements UserService {
+public class UserServiceImpl extends ServiceImpl<UserMapper,User> implements UserService {
 
     @Autowired
     private UserDao userDao;
