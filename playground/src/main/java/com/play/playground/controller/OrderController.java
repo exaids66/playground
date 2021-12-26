@@ -13,10 +13,7 @@ import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.transaction.annotation.Transactional;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -38,7 +35,7 @@ public class OrderController {
     @ApiOperation("用户预约小场地")
     @PostMapping("/order")
     @Transactional
-    public Result order(OrderVO orderVO){
+    public Result order(@RequestBody OrderVO orderVO){
         return orderService.order(orderVO);
     }
 
@@ -46,8 +43,7 @@ public class OrderController {
     @ApiOperation("签到")
     @PostMapping("/attend")
     @Transactional
-    public Result attend(AttendVO attendVO){
+    public Result attend(@RequestBody AttendVO attendVO){
         return orderService.attend(attendVO);
     }
-
 }

@@ -35,5 +35,19 @@
 
 
     </select>
+    
+    <select id="searchFieldTodayCondition" resultType="com.play.playground.entity.Order">
+        SELECT
+            `ORDER`.ID as ORDER_ID,
+            `ORDER`.ORDER_TIME as ORDER_TIME,
+            `ORDER`.START_TIME as START_TIME,
+            `ORDER`.END_TIME as END_TIME,
+            `ORDER`.STATUS as ORDER_STATUS,
+            `ORDER`.USER_ID as USER_ID,
+            `ORDER`.FIELD_ID as FIELD_ID
+        FROM `ORDER` INNER JOIN FIELD ON `ORDER`.FIELD_ID = FIELD.ID
+        ${ew.customSqlSegment}
 
+    </select>
+    
 </mapper>

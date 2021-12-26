@@ -24,4 +24,6 @@ public interface OrderMapper extends BaseMapper<Order> {
 
     List<OrderResultVO> searchOrder(@Param(Constants.WRAPPER) QueryWrapper queryWrapper);
 
+    List<Order> searchFieldTodayCondition(@Param(Constants.WRAPPER) QueryWrapper queryWrapper);
+
 }

@@ -25,4 +25,9 @@ public class OrderDao extends ServiceImpl<OrderMapper, Order> {
     public List<OrderResultVO> searchOrder(QueryWrapper queryWrapper){
         return this.getBaseMapper().searchOrder(queryWrapper);
     }
+
+    public List<Order> searchFieldTodayCondition(QueryWrapper queryWrapper){
+        return this.getBaseMapper().searchFieldTodayCondition(queryWrapper);
+    }
+
 }
