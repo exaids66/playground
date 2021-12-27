@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.play.playground.mapper.UserMapper">
@@ -12,4 +13,20 @@
 <!--    <select id="getUserByPhone" resultMap="">-->
 <!--        SELECT * FROM USER WHERE ${ew.customSqlSegment}-->
 <!--    </select>-->
+=======
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.play.playground.mapper.UserMapper">
+    <sql id="tableName">
+        USER
+    </sql>
+
+    <sql id="baseColumn">
+         ID,USERNAME,PASSWORD,NICKNAME,STATUS,PHONE
+    </sql>
+
+<!--    <select id="getUserByPhone" resultMap="">-->
+<!--        SELECT * FROM USER WHERE ${ew.customSqlSegment}-->
+<!--    </select>-->
+>>>>>>> fd1fe717dd5530926451dc4b0e91116c76f29c52
 </mapper>

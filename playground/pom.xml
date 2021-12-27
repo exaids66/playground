@@ -38,13 +38,35 @@
             <groupId>io.springfox</groupId>
             <artifactId>springfox-swagger2</artifactId>
             <version>2.9.2</version>
+<<<<<<< HEAD
+=======
+            <exclusions>
+                <exclusion>
+                    <groupId>io.swagger</groupId>
+                    <artifactId>swagger-models</artifactId>
+                </exclusion>
+            </exclusions>
+>>>>>>> fd1fe717dd5530926451dc4b0e91116c76f29c52
         </dependency>
         <dependency>
             <groupId>io.springfox</groupId>
             <artifactId>springfox-swagger-ui</artifactId>
             <version>2.9.2</version>
         </dependency>
+<<<<<<< HEAD
 
+=======
+        <dependency>
+            <groupId>cn.hutool</groupId>
+            <artifactId>hutool-all</artifactId>
+            <version>5.3.3</version>
+        </dependency>
+        <dependency>
+            <groupId>io.swagger</groupId>
+            <artifactId>swagger-models</artifactId>
+            <version>1.5.22</version>
+        </dependency>
+>>>>>>> fd1fe717dd5530926451dc4b0e91116c76f29c52
         <!--DevTool-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -64,6 +86,14 @@
             <artifactId>mysql-connector-java</artifactId>
             <scope>runtime</scope>
         </dependency>
+<<<<<<< HEAD
+=======
+        <!-- 延时任务 -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-amqp</artifactId>
+        </dependency>
+>>>>>>> fd1fe717dd5530926451dc4b0e91116c76f29c52
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>

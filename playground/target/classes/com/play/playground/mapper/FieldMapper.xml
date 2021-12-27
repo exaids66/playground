@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.play.playground.mapper.FieldMapper">
+
+<!--    <resultMap id="fieldSearchResultVO" type="com.play.playground.vo.FieldSearchResultVO">-->
+<!--        <result javaType="" property="" jdbcType=""/>-->
+<!--    </resultMap>-->
+
+    <sql id="tableName">
+        FIELD
+    </sql>
+
+    <sql id="baseColumn">
+        ID,TYPE,GROUND_ID,ADDRESS,STATUS,FIELD_NAME
+    </sql>
+    
+    <select id="searchField" resultType="com.play.playground.vo.FieldSearchResultVO">
+        SELECT
+            FIELD.ID as FIELD_ID,
+            FIELD.TYPE as TYPE,
+            FIELD.GROUND_ID as GROUND_ID,
+            FIELD.ADDRESS as FIELD_ADDRESS,
+            FIELD.STATUS as STATUS,
+            FIELD.FIELD_NAME as FIELD_NAME,
+            PLAYGROUND.GROUND_NAME as GROUND_NAME,
+            PLAYGROUND.ADDRESS as GROUND_ADDRESS,
+            PLAYGROUND.ADMIN_NAME as ADMIN_NAME,
+            PLAYGROUND.CONTACT as CONTACT,
+            PLAYGROUND.OPEN_TIME as OPEN_TIME,
+            PLAYGROUND.CLOSE_TIME as CLOSE_TIME
+        FROM FIELD INNER JOIN PLAYGROUND ON FIELD.GROUND_ID = PLAYGROUND.ID
+        ${queryWrapper.customSqlSegment}
+    </select>
+    
+</mapper>

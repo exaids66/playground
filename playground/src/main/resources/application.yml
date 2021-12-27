@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 server:
   port: 8080
 
@@ -7,3 +8,29 @@ spring:
     username: root
     password: root
     url: jdbc:mysql://121.43.40.44:3306/field?serverTimeZone=UTC
+=======
+server:
+  port: 8080
+
+spring:
+  datasource:
+    hikari:
+      minimum-idle: 3
+      maximum-pool-size: 10
+      max-lifetime: 30000
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: root
+    url: jdbc:mysql://121.43.40.44:3306/field?serverTimeZone=UTC
+  rabbitmq:
+    host: 121.43.40.44
+
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  global-config:
+    db-config:
+      id-type: assign_id
+
+
+>>>>>>> fd1fe717dd5530926451dc4b0e91116c76f29c52
